@@ -6,6 +6,8 @@ const Main = React.createClass({
         return(
             <div>
                 <h1><Link to="/">Reduxstagram</Link></h1>
+                {React.cloneElement(this.props.children, this.props)}        {/* takes  any props from Main and passed them down the tree */}
+
             </div>
         )
     }
